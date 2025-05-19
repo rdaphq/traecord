@@ -1,4 +1,5 @@
 {
+  "main": "./extension.js",
   "name": "rdaphq-traecord",
   "displayName": "Traecord: Discord Presence for Trae",
   "publisher": "rdaphq",
@@ -16,6 +17,8 @@
     "type": "git",
     "url": "https://github.com/rdaphq/traecord"
   },
+  ";license": "MIT",
+  "icon": "assets/icon.png",
   "keywords": [
     "rpc",
     "vscode",
@@ -31,7 +34,6 @@
   "activationEvents": [
     "onStartupFinished"
   ],
-  "main": "./extension.js",
   "contributes": {
     "configuration": {
       "type": "object",
