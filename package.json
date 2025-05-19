@@ -4,7 +4,7 @@
   "displayName": "Traecord: Discord Presence for Trae",
   "publisher": "rdaphq",
   "description": "Show what you're coding in Trae IDE on your Discord activity.",
-  "version": "1.0.7",
+  "version": "1.1.0",
   "engines": {
     "vscode": "^1.60.0"
   },
