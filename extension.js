@@ -67,16 +67,6 @@ function activate(context) {
 
 	function updatePresence() {
 		if (!rpcProcess) return;
-
-		const payload = {
-			details: 'Testing',
-			state: 'Debug mode',
-			startTimestamp: Date.now(),
-			largeImageKey: 'javascript',
-			largeImageText: 'JS File',
-			smallImageKey: 'trae',
-			smallImageText: 'Trae',
-		}
 		
 		const config = vscode.workspace.getConfiguration('traecord');
 		const showFileName = config.get('showFileName');
@@ -108,25 +98,24 @@ function activate(context) {
 
 		const languageText = `Editing a ${language} file`;
 
-		// rpcProcess.send({
-		// 	type:'setActivity',
-		// 	data: {
-		// 		details: details,
-		// 		state: state,
-		// 		startTimestamp,
-		// 		largeImageKey: language,
-		// 		largeImageText: languageText,
-		// 		smallImageKey: 'trae',
-		// 		smallImageText: 'Trae',
-		// 	}
-		// })
+		console.log(`[Traecord] Sending payload: ${language}`);
 
-		console.log(`[Traecord] Sending test payload: ${language}`);
+		const payload = {
+			details: details,
+			state: state,
+			startTimestamp: Date.now(),
+			largeImageKey: language,
+			largeImageText: languageText,
+			smallImageKey: 'trae',
+			smallImageText: 'Trae',
+		}
 
 		rpcProcess.send({
 			type: 'setActivity',
 			data: payload
 		})
+
+		console.log(`[Traecord] Status set.`);
 	}
 
 	vscode.window.onDidChangeActiveTextEditor(updatePresence);
