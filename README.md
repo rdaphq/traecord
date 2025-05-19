@@ -33,3 +33,6 @@ Access settings through `Preferences → Settings → Extensions → Traecord` o
 ```json
 "traecord.showFileName": true,
 "traecord.showWorkspace": true
+```
+
+> Note: Traecord uses `discord-rpc` to update your status in Discord and provide the real-time presence updates from Trae to Discord. This integration is local-only and does not send any data externally.
