@@ -8,6 +8,8 @@ let startTimestamp = new Date();
 let isConnected = false;
 
 function activate(context) {
+	console.log('Activating Traecord extension.');
+
 	const clientId = '817458228731576390';
 	const statusBarItem = vscode.window.createStatusBarItem(vscode.StatusBarAlignment.Left, 100);
 	statusBarItem.command = 'traecord.toggle';

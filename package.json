@@ -41,9 +41,8 @@
   ],
   "activationEvents": [
     "onStartupFinished",
-    "onLanguage:*",
-    "onCommand:*",
-    "onView:*"
+    "onCommand:traecord.toggle",
+    "onLanguage:*"
   ],
   "contributes": {
     "configuration": {
