@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/rdaphq/traecord#readme",
   "license": "MIT",
-  "icon": "assets/icon.png",
+  "icon": "icon.png",
   "keywords": [
     "rpc",
     "vscode",
@@ -41,10 +41,15 @@
   ],
   "activationEvents": [
     "onStartupFinished",
-    "onCommand:traecord.toggle",
     "onLanguage:*"
   ],
   "contributes": {
+    "commands": [
+      {
+        "command": "traecord.toggle",
+        "title": "Toggle Traecord Connection"
+      }
+    ],
     "configuration": {
       "type": "object",
       "title": "Traecord Settings",
@@ -74,5 +79,12 @@
     "@vscode/test-cli": "^0.0.10",
     "@vscode/test-electron": "^2.5.2",
     "eslint": "^9.25.1"
+  },
+  "files": [
+    "extension.js",
+    "rpc-client.js"
+  ],
+  "dependencies": {
+    "discord-rpc": "^4.0.1"
   }
 }
