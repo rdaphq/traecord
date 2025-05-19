@@ -1,7 +1,12 @@
 .vscode/**
 .vscode-test/**
 test/**
+*.map
+*.ts
+*.mjs
 .gitignore
+.git
+assets
 .yarnrc
 vsc-extension-quickstart.md
 **/jsconfig.json
@@ -9,8 +14,3 @@ vsc-extension-quickstart.md
 **/eslint.config.mjs
 **/.vscode-test.*
 test-ext.js
-.git
-*.map
-node_modules/**
-!node_modules/discord-rpc/**
-assets

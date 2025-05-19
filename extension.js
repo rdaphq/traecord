@@ -1,7 +1,6 @@
 const vscode = require('vscode');
 
 let rpcProcess;
-let startTimestamp = new Date();
 let isConnected = false;
 
 function activate(context) {
@@ -89,7 +88,7 @@ function activate(context) {
 				type: 'setActivity',
 				data: {
 					details: 'Idling',
-					startTimestamp,
+					startTimestamp: Date.now(),
 					largeImageKey: 'idle',
 					largeImageText: 'Idling',
 					smallImageKey: 'trae',
