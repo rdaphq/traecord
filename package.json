@@ -1,0 +1,66 @@
+{
+  "name": "rdaphq-traecord",
+  "displayName": "Traecord: Discord Presence for Trae",
+  "publisher": "rdaphq",
+  "description": "Show what you're coding in Trae IDE on your Discord activity.",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.100.0"
+  },
+  "categories": [
+    "Other",
+    "Visualization"
+  ],
+  "author": "rdaphq",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rdaphq/traecord"
+  },
+  "keywords": [
+    "rpc",
+    "vscode",
+    "traeide",
+    "discord",
+    "presence",
+    "activity",
+    "discord rpc",
+    "discord presence",
+    "traecord",
+    "trae"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "configuration": {
+      "type": "object",
+      "title": "Traecord Settings",
+      "properties": {
+        "traecord.showFileName": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show file name in Discord status"
+        },
+        "traecord.showWorkspace": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show workspace name in Discord status"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.100.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "eslint": "^9.25.1",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
