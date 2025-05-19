@@ -11,5 +11,6 @@ vsc-extension-quickstart.md
 test-ext.js
 .git
 *.map
-node_modules
+node_modules/**
+!node_modules/discord-rpc/**
 assets
