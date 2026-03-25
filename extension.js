@@ -82,7 +82,7 @@ function activate(context) {
 					largeImageKey: 'idle',
 					largeImageText: 'Idling',
 					smallImageKey: 'trae',
-					smallImageText: 'Trae',
+					smallImageText: 'TRAE',
 				}
 			});
 
@@ -107,7 +107,7 @@ function activate(context) {
 			largeImageKey: language,
 			largeImageText: languageText,
 			smallImageKey: 'trae',
-			smallImageText: 'Trae',
+			smallImageText: 'TRAE',
 		}
 
 		rpcProcess.send({
