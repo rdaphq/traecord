@@ -1,9 +1,9 @@
 {
   "main": "./extension.js",
-  "name": "rdaphq-traecord",
-  "displayName": "Traecord: Discord Presence for Trae",
-  "publisher": "rdaphq",
-  "description": "Show what you're coding in Trae IDE on your Discord activity.",
+  "name": "traecord",
+  "displayName": "Traecord: Discord Presence",
+  "publisher": "rdapdev",
+  "description": "Show your real-time coding activity and workspace info on Discord.",
   "version": "1.2.1",
   "engines": {
     "vscode": "^1.60.0"
@@ -13,8 +13,8 @@
     "Visualization"
   ],
   "author": {
-    "name": "rdaphq",
-    "email": "rdaphq@gmail.com",
+    "name": "rdapdev",
+    "email": "hello@rdaphq.com",
     "url": "https://github.com/rdaphq"
   },
   "repository": {
@@ -29,15 +29,12 @@
   "icon": "icon.png",
   "keywords": [
     "rpc",
-    "vscode",
-    "traeide",
     "discord",
     "presence",
     "activity",
     "discord rpc",
     "discord presence",
-    "traecord",
-    "trae"
+    "traecord"
   ],
   "activationEvents": [
     "onStartupFinished",

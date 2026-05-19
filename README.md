@@ -1,41 +1,10 @@
 # 🟦 Traecord
 
-**Traecord** is a lightweight and powerful Visual Studio Code (made for Trae) extension that brings your code presence to life — directly on Discord.
+**Traecord** is a lightweight and powerful extension that brings your code presence to life — directly on Discord.
 
-Display what you're working on in real time: file names, programming languages, and workspace info. Whether you're focused, exploring settings, or just idling, Traecord keeps your Discord status in sync with your coding.
+Display what you're working on in real time: file names, programming languages, and workspace info. Whether you're focused, exploring settings, or just idling, Traecord keeps your Discord status beautifully in sync.
 
----
-
-## ✨ Features
-
-- 🎯 **File Detection**  
-  Automatically shows the current file name and language you're working on.
-
-- 🗂 **Workspace Awareness**  
-  Displays the name of your active workspace/project.
-
-- ⚙️ **Smart Status**  
-  - “Idling” when no file is open.
-  - “Editing” when you're working on a file.
-
-- 🎨 **Rich Presence Icons**  
-  Automatically detects language-specific icons from a customizable asset folder.
-
-- 🧠 **Minimal & Non-intrusive**  
-  Updates your status in the background — no distractions.
-
----
-
-## ⚙️ Configuration
-
-Access settings through `Preferences → Settings → Extensions → Traecord` or edit via `settings.json`:
-
-```json
-"traecord.showFileName": true,
-"traecord.showWorkspace": true
-```
-
-> Note: Traecord uses `discord-rpc` to update your status in Discord and provide the real-time presence updates from Trae to Discord. This integration is local-only and does not send any data externally.
+> Note: Traecord uses `discord-rpc` to update your status in Discord. This integration is local-only and does not send any data externally.
 
 ## Changelog 
 - **1.0.0** - Initial release with basic features.
@@ -43,4 +12,3 @@ Access settings through `Preferences → Settings → Extensions → Traecord` o
 - **1.1.4** - Fixed timestamp preservation in session.
 - **1.2.0** - Fixed security vulnerabilities in packages.
 - **1.2.1** - Fixed status update in background.
-
